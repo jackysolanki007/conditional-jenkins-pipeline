@@ -1,11 +1,11 @@
 version: "3.7"
 
 services:
-  main:
+  prod:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: main-repo
+    container_name: prod-repo
     ports:
       - 8080:5000
     networks:
